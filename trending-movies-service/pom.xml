@@ -1,0 +1,12 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com</groupId>
+    <artifactId>trending-movies-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>trending-movies-service</name>
+    <packaging>pom</packaging>
+    <modules>
+        <module>TrendingCommon</module>
+        <module>TrendingService</module>
+    </modules>
+</project>
