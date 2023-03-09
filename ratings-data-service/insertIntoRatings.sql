@@ -1,0 +1,9 @@
+SELECT * FROM rating.ratings;
+
+INSERT INTO ratings VALUES (1,500,5);
+INSERT INTO ratings VALUES (1,501,4);
+INSERT INTO ratings VALUES (1,503,4);
+INSERT INTO ratings VALUES (1,504,4);
+INSERT INTO ratings VALUES (2,500,4);
+INSERT INTO ratings VALUES (2,501,4);
+INSERT INTO ratings VALUES (3,500,4);

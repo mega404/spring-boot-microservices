@@ -1,0 +1,26 @@
+[{
+  "_id": "501",
+  "title": "Grizzly Man",
+  "overview": "Werner Herzog's documentary film about the \"Grizzly Man\" Timothy Treadwell and what the thirteen summers in a National Park in Alaska were like in one man's attempt to protect the grizzly bears. The film is full of unique images and a look into the spirit of a man who sacrificed himself for nature.",
+  "_class": "com.example.movieinfoservice.models.MovieSummary"
+},{
+  "_id": "503",
+  "title": "Poseidon",
+  "overview": "A packed cruise ship traveling the Atlantic is hit and overturned by a massive wave, compelling the passengers to begin a dramatic fight for their lives.",
+  "_class": "com.example.movieinfoservice.models.MovieSummary"
+},{
+  "_id": "504",
+  "title": "Monster",
+  "overview": "An emotionally scarred highway drifter shoots a sadistic trick who rapes her, and ultimately becomes the United States' first female serial killer.",
+  "_class": "com.example.movieinfoservice.models.MovieSummary"
+},{
+  "_id": "600",
+  "title": "Full Metal Jacket",
+  "overview": "A pragmatic U.S. Marine observes the dehumanizing effects the U.S.-Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.",
+  "_class": "com.example.movieinfoservice.models.MovieSummary"
+},{
+  "_id": "500",
+  "title": "Reservoir Dogs",
+  "overview": "A botched robbery indicates a police informant, and the pressure mounts in the aftermath at a warehouse. Crime begets violence as the survivors -- veteran Mr. White, newcomer Mr. Orange, psychopathic parolee Mr. Blonde, bickering weasel Mr. Pink and Nice Guy Eddie -- unravel.",
+  "_class": "com.example.movieinfoservice.models.MovieSummary"
+}]
