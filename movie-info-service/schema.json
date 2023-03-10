@@ -1,0 +1,20 @@
+{
+  $jsonSchema: {
+    required: [
+      '_id',
+      'title',
+      'overview'
+    ],
+    properties: {
+      _id: {
+        bsonType: 'string'
+      },
+      title: {
+        bsonType: 'string'
+      },
+      overview: {
+        bsonType: 'string'
+      }
+    }
+  }
+}
