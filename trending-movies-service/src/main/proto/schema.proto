@@ -1,4 +1,4 @@
-syntax = "proto3";
+syntax = "proto2";
 
 package com.TrendingMoviesClientService;
 
@@ -12,13 +12,13 @@ service TrendingMoviesIdsService {
 }
 
 message request {
-    string reqMessage = 1;
+    required  string reqMessage = 1;
 }
 
 
 message Rating {
-    int32 movieId = 1;
-    int32 rating = 2;
+    required int32 movieId = 1;
+    required int32 rating = 2;
 }
 
 message RatingList {

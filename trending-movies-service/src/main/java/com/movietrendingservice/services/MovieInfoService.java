@@ -1,8 +1,8 @@
-package com.moviecatalogservice.services;
+package com.movietrendingservice.services;
 
-import com.moviecatalogservice.models.CatalogItem;
-import com.moviecatalogservice.models.Movie;
-import com.moviecatalogservice.models.Rating;
+import com.movietrendingservice.models.CatalogItem;
+import com.movietrendingservice.models.Movie;
+import com.movietrendingservice.models.Rating;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;

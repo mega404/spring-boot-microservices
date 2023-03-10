@@ -1,10 +1,10 @@
-package com.moviecatalogservice;
+package com.movietrendingservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MovieCatalogServiceApplicationTests {
+class MovieTrendingServiceApplicationTests {
 
     @Test
     void contextLoads() {

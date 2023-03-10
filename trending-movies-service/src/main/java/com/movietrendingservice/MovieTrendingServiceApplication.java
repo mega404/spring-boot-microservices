@@ -1,4 +1,4 @@
-package com.moviecatalogservice;
+package com.movietrendingservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @EnableCircuitBreaker
 @EnableHystrixDashboard
-public class MovieCatalogServiceApplication {
+public class MovieTrendingServiceApplication {
 
     private final int TIMEOUT = 3000;   // 3 seconds
 
@@ -28,7 +28,7 @@ public class MovieCatalogServiceApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(MovieCatalogServiceApplication.class, args);
+        SpringApplication.run(MovieTrendingServiceApplication.class, args);
     }
 
 }

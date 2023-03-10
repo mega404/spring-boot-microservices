@@ -1,4 +1,4 @@
-package com.moviecatalogservice.services;
+package com.movietrendingservice.services;
 
 import com.TrendingMoviesClientService.RatingList;
 import com.TrendingMoviesClientService.TrendingMoviesIdsServiceGrpc;

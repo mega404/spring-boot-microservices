@@ -1,4 +1,4 @@
-package com.moviecatalogservice.models;
+package com.movietrendingservice.models;
 
 import java.util.List;
 
