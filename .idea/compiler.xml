@@ -7,11 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="movie-catalog-service" />
+        <module name="proto" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="movie-catalog-service" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

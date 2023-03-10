@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package com.TrendingMoviesClientService;
+
+option java_multiple_files = true;
+option java_package = "com.TrendingMoviesClientService";
+
+service TrendingMoviesIdsService {
+    //server streaming
+    rpc getTrendingMoviesIds(request) returns(stream RatingList) {
+    };
+}
+
+message request {
+    string reqMessage = 1;
+}
+
+
+message Rating {
+    int32 movieId = 1;
+    int32 rating = 2;
+}
+
+message RatingList {
+    repeated Rating ratingList = 1;
+}
+
+
