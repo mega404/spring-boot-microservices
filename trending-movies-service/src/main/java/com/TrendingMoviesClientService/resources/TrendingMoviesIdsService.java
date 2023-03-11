@@ -18,7 +18,7 @@ public class TrendingMoviesIdsService extends TrendingMoviesIdsServiceGrpc.Trend
 
     @Override
     public void getTrendingMoviesIds(request request, io.grpc.stub.StreamObserver<RatingList> responseObserver) {
-        RatingList rl = trendingMoviesService.ping();
+        RatingList rl = trendingMoviesService.getTrending("mega");
 
 //        RatingList.Builder reply = RatingList.newBuilder()
 //                .addRatingList(new Rating().newBuilderForType().setMovieId(Integer.parseInt("500")).setRating(4));
