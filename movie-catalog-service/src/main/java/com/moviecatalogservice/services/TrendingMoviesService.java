@@ -1,14 +1,11 @@
-package com.TrendingMoviesClientService.services;
+package com.moviecatalogservice.services;
 
+import org.springframework.stereotype.Service;
+
+import net.devh.boot.grpc.client.inject.GrpcClient;
 import com.TrendingMoviesClientService.RatingList;
 import com.TrendingMoviesClientService.TrendingMoviesIdsServiceGrpc;
 import com.TrendingMoviesClientService.request;
-import io.grpc.ManagedChannel;
-import io.grpc.ManagedChannelBuilder;
-import net.devh.boot.grpc.client.inject.GrpcClient;
-import org.springframework.stereotype.Service;
-
-import static com.TrendingMoviesClientService.TrendingMoviesIdsServiceGrpc.newBlockingStub;
 
 @Service
 public class TrendingMoviesService {
