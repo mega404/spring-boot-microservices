@@ -1,5 +1,8 @@
-package com.movietrendingservice;
+package com.TrendingMoviesClientService;
 
+import com.TrendingMoviesClientService.TrendingMoviesIdsServiceGrpc;
+import io.grpc.Server;
+import io.grpc.ServerBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
@@ -9,6 +12,8 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
+
+import java.io.IOException;
 
 @SpringBootApplication
 @EnableEurekaClient
@@ -27,7 +32,7 @@ public class MovieTrendingServiceApplication {
         return new RestTemplate(clientHttpRequestFactory);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
         SpringApplication.run(MovieTrendingServiceApplication.class, args);
     }
 

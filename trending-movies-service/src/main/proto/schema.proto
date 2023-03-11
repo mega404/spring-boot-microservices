@@ -3,7 +3,7 @@ syntax = "proto2";
 package com.TrendingMoviesClientService;
 
 option java_multiple_files = true;
-option java_package = "com.TrendingMoviesClientService";
+//option java_package = "com.TrendingMoviesClientService";
 
 service TrendingMoviesIdsService {
     //server streaming
