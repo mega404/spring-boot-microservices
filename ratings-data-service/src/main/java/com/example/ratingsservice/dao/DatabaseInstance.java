@@ -33,21 +33,5 @@ public class DatabaseInstance {
         Statement statement = connection.createStatement();
         return statement.executeQuery(query);
     }
-//
-//    public int executeUpdate(String update) throws SQLException {
-//        Statement statement = connection.createStatement();
-//        return statement.executeUpdate(update);
-//    }
-//
-//    public void commitTransaction() throws SQLException{
-//        connection.commit();
-//    }
-//
-//    public void rollbackTransaction(){
-//        try {
-//            connection.rollback();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
+
 }

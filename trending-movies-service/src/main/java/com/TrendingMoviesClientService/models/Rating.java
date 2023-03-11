@@ -1,4 +1,4 @@
-package com.moviecatalogservice.models;
+package com.TrendingMoviesClientService.models;
 
 public class Rating {
 
