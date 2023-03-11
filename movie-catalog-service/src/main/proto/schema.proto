@@ -6,18 +6,18 @@ option java_multiple_files = true;
 
 service TrendingMoviesIdsService {
   //server streaming
-  rpc getTrendingMoviesIds(request) returns(stream RatingList) {
+  rpc getTrendingMoviesIds(request) returns(RatingList) {
   };
 }
 
 message request {
-  required  string reqMessage = 1;
+//  required  string reqMessage = 1;
 }
 
 
 message Rating {
-  required int32 movieId = 1;
-  required int32 rating = 2;
+  required string movieId = 1;
+  required float rating = 2;
 }
 
 message RatingList {

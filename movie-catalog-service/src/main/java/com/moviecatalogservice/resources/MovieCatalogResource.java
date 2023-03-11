@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -51,10 +52,19 @@ public class MovieCatalogResource {
     }
 
     @RequestMapping("/trending")
-    public String TrendingMovies() {
-        RatingList ratings = trendingMoviesService.getTrending("");
-        System.out.println(ratings.toString());
-//        return ratings.stream().map(movieInfoService::getCatalogItem).collect(Collectors.toList());
-        return ratings.toString();
+    public List<CatalogItem> TrendingMovies() {
+        RatingList ratingList = trendingMoviesService.getTrending();
+        System.out.println(ratingList.toString());
+        List<Rating> ratings = toRating(ratingList.getRatingListList());
+        return ratings.stream().map(movieInfoService::getCatalogItem).collect(Collectors.toList());
     }
+
+    private List<Rating> toRating(List<com.TrendingMoviesClientService.Rating> ratingListList) {
+        List<Rating> list = new ArrayList<>();
+        for (com.TrendingMoviesClientService.Rating item : ratingListList) {
+            list.add(new Rating(item.getMovieId(), item.getRating()));
+        }
+        return list;
+    }
+
 }

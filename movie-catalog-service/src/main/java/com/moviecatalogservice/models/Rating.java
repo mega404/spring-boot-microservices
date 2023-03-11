@@ -3,12 +3,12 @@ package com.moviecatalogservice.models;
 public class Rating {
 
     private String movieId;
-    private int rating;
+    private float rating;
 
     public Rating() {
     }
 
-    public Rating(String movieId, int rating) {
+    public Rating(String movieId, float rating) {
         this.movieId = movieId;
         this.rating = rating;
     }
@@ -21,11 +21,11 @@ public class Rating {
         this.movieId = movieId;
     }
 
-    public int getRating() {
+    public float getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(float rating) {
         this.rating = rating;
     }
 }

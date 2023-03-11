@@ -7,6 +7,8 @@ import com.TrendingMoviesClientService.request;
 import com.example.ratingsservice.services.TrendingService;
 import net.devh.boot.grpc.server.service.GrpcService;
 
+import java.util.ArrayList;
+
 @GrpcService
 public class TrendingMoviesResource extends TrendingMoviesIdsServiceGrpc.TrendingMoviesIdsServiceImplBase {
 
@@ -19,9 +21,8 @@ public class TrendingMoviesResource extends TrendingMoviesIdsServiceGrpc.Trendin
     @Override
     public void getTrendingMoviesIds(request request, io.grpc.stub.StreamObserver<RatingList> responseObserver) {
         System.out.println("Rating Service received request from trending");
-        this.trendingService.getTrending();
-        RatingList.Builder reply = RatingList.newBuilder()
-                .addRatingList(new Rating().newBuilderForType().setMovieId(Integer.parseInt("500")).setRating(4));
+        ArrayList<Rating> ratings = (ArrayList<Rating>) this.trendingService.getTrending();
+        RatingList.Builder reply = RatingList.newBuilder().addAllRatingList(ratings);
         responseObserver.onNext(reply.build());
         responseObserver.onCompleted();
     }
